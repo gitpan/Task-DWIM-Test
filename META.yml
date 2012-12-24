@@ -4,6 +4,8 @@ author:
   - 'Gabor Szabo <szabgab@cpan.org>'
 build_requires:
   ExtUtils::MakeMaker: 6.59
+  Perl::Version: 1.011
+  Test::More: 0.42
 configure_requires:
   ExtUtils::MakeMaker: 6.59
 distribution_type: module
@@ -19,6 +21,11 @@ no_index:
     - inc
     - t
 requires:
+  DBD::Mock: 0
+  Devel::Cover: 0.79
+  File::Compare: 0
+  HTML::Lint: 2.20
+  Pod::Spell: 0
   Test::Assert: 0.0504
   Test::Base: 0.60
   Test::Class: 0.36
@@ -28,8 +35,10 @@ requires:
   Test::Distribution: 2.00
   Test::Exception: 0.31
   Test::Fatal: 0.010
+  Test::HTML::Lint: 0
   Test::HTTP::Server::Simple: 0.11
   Test::Harness: 0
+  Test::Inline: 0
   Test::LeakTrace: 0.14
   Test::LongString: 0.15
   Test::Manifest: 1.23
@@ -50,6 +59,9 @@ requires:
   Test::Script: 1.07
   Test::SharedFork: 0.19
   Test::Simple: 0.88
+  Test::Snapshots: 0.02
+  Test::Spelling: 0
+  Test::Strict: 0
   Test::SubCalls: 1.09
   Test::TCP: 1.15
   Test::Taint: 1.04
@@ -58,13 +70,13 @@ requires:
   Test::Trap: 0.2.1
   Test::Unit::Lite: 0.12
   Test::WWW::Mechanize: 1.38
-  Test::WWW::Mechanize::Catalyst: 0
   Test::WWW::Selenium: 1.32
   Test::Warn: 0.24
   Test::Without::Module: 0.17
   Test::use::ok: 0.02
+  Text::Diff: 1.41
   perl: 5.008
 resources:
   license: http://dev.perl.org/licenses/
   repository: https://github.com/dwimperl/Task-DWIM
-version: 0.06
+version: 0.07
